@@ -11,10 +11,10 @@
 <h3 class="user">Bienvenido </h3>
 <h3 class="user">{{user.username}}</h3>
 <body>
-    <h1 class="f">Ingresar Cliente</h1>
+    <h1 class="f">Ingresar Proveedor</h1>
    
     <div id="registro" class="container">
-        <form  role="form" enctype="multipart/form-data" action="" method="POST" id="upload-image-form" id="formularioCliente">
+        <form  role="form" enctype="multipart/form-data" action="" method="POST" id="upload-image-form" id="formularioProveedor">
 
 
 
@@ -22,7 +22,7 @@
 
                 <label for="id_producto">Producto:</label>
                 {% csrf_token %}
-                {{ formCliente.producto}}
+                {{ formProveedor.producto}}
 
             </div>
 

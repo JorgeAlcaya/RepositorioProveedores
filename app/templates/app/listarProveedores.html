@@ -10,11 +10,11 @@
 <link href="{% static 'css/menu.css' %}" rel="stylesheet">
 <h3 class="user">Bienvenido </h3>
 <h3 class="user">{{user.username}}</h3>
-<h1 class="f">Listar Clientes</h1>
+<h1 class="f">Listar Proveedoress</h1>
 <body  > 
 
 
-        <!-- <form action="/listarClientes" method="POST">
+        <!-- <form action="/listarProveedores" method="POST">
             <div class="flot">
                 <div>
                        <h1>Buscar por Apellido Paterno:</h1> 
@@ -36,7 +36,7 @@
            
             
             {% csrf_token %}
-            <input class="flot" action="/listarClientes" type="submit" value="Mostrar Todos">
+            <input class="flot" action="/listarProveedores" type="submit" value="Mostrar Todos">
         </form>
         -->
 
@@ -51,7 +51,7 @@
        
        
    
-    {% for c in cliente %}
+    {% for c in proveedor %}
             
                 <form  role="form" enctype="multipart/form-data" action="" method="POST" id="upload-image-form">
                     <div class="btit" id="tcen" >
